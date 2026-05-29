@@ -1,0 +1,27 @@
+a : TTY=tty1 ; PWD=/home/a ; USER=root ; COMMAND=/usr/sbin/ip link set enp0s8 up
+
+a : TTY=tty1 ; PWD=/home/a ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth. log
+
+a : TTY=tty1 ; PWD=/home/a ; USER=root ; COMMAND=/usr/bin/nano /var/log/auth.log
+
+2026-05-29T17:48:07.357774+00:00 a sudo: pam_unix(sudo: session) : session opened for user root (uid=0) by a(uid=1000)
+2026-05-29T17:48:07.365423+00:00 a sudo: pam_unix(sudo: session): session closed for user root
+2026-05-29T17:48:19.931294+00:00 a sudo:
+2026-05-29T17:48:19.960098+00:00 a sudo: pam_unix(sudo: session): session opened for user root (uid=0) by a(uid=1000)
+2026-05-29T17:48:19.960396+00:00 a sudo: pam_unix(sudo:session): session closed for user root
+2026-05-29T17:48:43.522692+00:00 a sshd [18493] : Connection closed by authenticating user a 192. 168.100.20 port 46646 [preauth]
+2026-05-29T17:49:19.473282+00:00 a sudo:
+2026-05-29T17:49:19.474175+00:00 a sudo: pam_unix(sudo:session): session opened for user root(uid=0) by a(uid=1000)
+2026-05-29T17:49:39.559045+00:00 a sshd [18500]: Invalid user fakeuser from 192.168.100.20 port 37652
+2026-05-29T17:49:42.333160+00:00 a sshd [18500]: pam_unix(sshd:auth): check pass; user unknown
+2026-05-29T17:49:42.333255+00:00 a sshd [18500] : pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20
+2026-05-29T17:49:44.613660+00:00 a sshd [18500]: Failed password for invalid user fakeuser from 192.168.100.20 port 37652 ssh2
+2026-05-29T17:49:46.304990+00:00 a sshd [18500] : pam_unix(sshd:auth): check pass; user unknown
+2026-05-29T17:49:48.466792+00:00 a sshd [18500]: Failed password for invalid user fakeuser from 192.168.100.20 port 37652 ssh2
+2026-05-29T17:49:51.627810+00:00 a sshd [18500] : pam_unix(sshd:auth): check pass; user unknown
+2026-05-29T17:49:53.474791+00:00 a sshd [18500]: Failed password for invalid user fakeuser from 192.168.100.20 port 37652 ssh2
+2026-05-29T17:49:54.530658+00:00 a sshd [18500]: Connection closed by invalid user fakeuser 192.168.100.20 port 37652 [preauth]
+2026-05-29T17:49:54.531843+00:00 a sshd [18500]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20
+2026-05-29T17:50:29.167976+00:00 a sudo: pam_unix(sudo:session): session closed for user root
+2026-05-29T17:50:42.727047+00:00 a sudo: a : TTY=tty1 ; PWD=/home/a ; USER=root ; COMMAND=/usr/bin/nano /var/log/auth.log
+2026-05-29T17:50:42.727576+00:00 a sudo: pam_unix(sudo:session): session opened for user root(uid=0) by a(uid=1000)
